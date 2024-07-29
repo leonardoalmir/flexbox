@@ -7,50 +7,409 @@
     <title>1 Display Flex</title>
 </head>
 <body>
-    <h1>display: block;</h1>
-    <section class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
+    <!-- Aula 1 -->
+    <section class="bg-white">
+        <h1>Aula 1</h1>
+        <h2>Introdução ao display flex</h2>
+        <div>
+            <h3><span>display: block;</span> (no container)</h3>
+            <p>(conteúdo ocupa por padrão todo o espaço do container)</p>
+            <article class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)</h3>
+            <p>(conteúdo ocupa por padrão só o espaço do item)</p>
+            <article class="container flex">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)</h3>
+            <p>(conteúdo interno maior. Passa do tamanho do container)</p>
+            <article class="container flex">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+                <div class="item">Teste 5</div>
+                <div class="item">Teste 6</div>
+                <div class="item">Teste 7</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-wrap: wrap;</span> (no container)</h3>
+                <p>(Acontece quebra de linha)</p>
+            <article class="container flex flex-wrap">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+                <div class="item">Teste 5</div>
+                <div class="item">Teste 6</div>
+                <div class="item">Teste 7</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-item: 1;</span> (no item)</h3>
+                <p>(Redimensiona os item para ocupar o espaço)</p>
+            <article class="container flex flex-wrap">
+                <div class="item flex-item-1">Teste 1</div>
+                <div class="item flex-item-1">Teste 2</div>
+                <div class="item flex-item-1">Teste 3</div>
+                <div class="item flex-item-1">Teste 4</div>
+            </article>
+        </div>
     </section>
-    <h1>display: flex;</h1>
-    <section class="container flex">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
+    <!-- Aula 2 -->
+    <section class="bg-gray">
+        <h1>Aula 2</h1>
+        <h2>flex-direction</h2>
+        <p>Possibilita definir se os itens ficarão orientados vertical ou horizontalmente. <br> É possível também inverter a orientação de exibição dos itens.</p>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-direction: row;</span> (no container)</h3>
+                <p>(Por padrão os itens já ficam com essa disposição em linha)</p>
+            <article class="container flex flex-wrap flex-row">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span><span>display: flex;</span></span> (no container)<br>
+                <span>flex-direction: row-reverse;</span> (no container)</h3>
+                <p>(Por padrão os itens já ficam com essa disposição em linha)</p>
+            <article class="container flex flex-wrap flex-row-reverse">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span><span>display: flex;</span></span> (no container)<br>
+                <span>flex-direction: column;</span> (no container)</h3>
+                <p>(Os itens são posicionados em coluna na ordem crescente)</p>
+            <article class="container flex flex-wrap flex-column">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span><span>display: flex;</span></span> (no container)<br>
+                <span>flex-direction: column-reverse;</span> (no container)</h3>
+                <p>(Os itens são posicionados em coluna na ordem decrescente)</p>
+            <article class="container flex flex-wrap flex-column-reverse">
+                <div class="item">Teste 1</div>
+                <div class="item">Teste 2</div>
+                <div class="item">Teste 3</div>
+                <div class="item">Teste 4</div>
+            </article>
+        </div>
     </section>
-    <h1>display: flex; <br> (conteúdo interno maior. Passa do tamanho do container)</h1>
-    <section class="container flex">
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
+    <!-- Aula 3 -->
+    <section class="bg-white">
+        <h1>Aula 3</h1>
+        <h2>flex-wrap</h2>
+        <p>Permite controlar se vai haver quebra de linha quando os itens chegarem na borda do container.</p>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-wrap: nowrap;</span> (no container)</h3>
+                <p>(O padrão é nowrap. Conteúdo interno maior. Passa do tamanho do container)</p>
+            <article class="container flex flex-wrap-nowrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-wrap: wrap;</span> (no container)</h3>
+                <p>(Acontece quebra de linha, respeitando o tamanho do container)</p>
+            <article class="container flex flex-wrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-wrap: wrap-reverse;</span> (no container)</h3>
+                <p>(Acontece quebra de linha e inverte a ordem dos itens)</p>
+            <article class="container flex flex-wrap-reverse">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
     </section>
-    <h1>display: flex; <br>
-        flex: wrap; <br>
-        (Acontece quebra de linha)</h1>
-    <section class="container flex flex-wrap">
-        <div class="item">Teste 1</div>
-        <div class="item">Teste 2</div>
-        <div class="item">Teste 3</div>
-        <div class="item">Teste 4</div>
-        <div class="item">Teste 5</div>
-        <div class="item">Teste 6</div>
-        <div class="item">Teste 7</div>
+    <!-- Aula 4 -->
+    <section class="bg-gray">
+        <h1>Aula 4</h1>
+        <h2>Flex-flow</h2>
+        <p>(é um atalho para o flex-direction e o flex-wrap)</p>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: row nowrap;</span> (no container)</h3>
+                <p>(Em linha e sem quebra)</p>
+            <article class="container flex flex-flow-row-nowrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: row-reverse nowrap;</span> (no container)</h3>
+                <p>(Em linha e sem quebra)</p>
+            <article class="container flex flex-flow-row-reverse-nowrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: row wrap;</span> (no container)</h3>
+                <p>(Em linha com quebra de linha)</p>
+            <article class="container flex flex-flow-row-wrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: row-reverse wrap;</span> (no container)</h3>
+                <p>(Em linha com quebra de linha)</p>
+            <article class="container flex flex-flow-row-reverse-wrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: column nowrap;</span> (no container)</h3>
+                <p>(Em coluna e sem quebra de linha)</p>
+            <article class="container flex flex-flow-column-nowrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: column wrap;</span> (no container)</h3>
+                <p>(Em coluna com quebra de linha - mesmo efeito do anterior)</p>
+            <article class="container flex flex-flow-column-wrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
+        <div>
+            <h3><span>display: flex;</span> (no container)<br>
+                <span>flex-flow: column-reverse wrap;</span> (no container)</h3>
+                <p>(Em coluna com quebra de linha - mesmo efeito do anterior)</p>
+            <article class="container flex flex-flow-column-reverse-wrap">
+                <div class="item">TesteDoItem 1</div>
+                <div class="item">TesteDoItem 2</div>
+                <div class="item">TesteDoItem 3</div>
+                <div class="item">TesteDoItem 4</div>
+            </article>
+        </div>
     </section>
-    <h1>display: flex; <br>
-        flex-item: 1; <br>
-        (Redimensiona os item para oculpar o espaço)</h1>
-    <section class="container flex flex-wrap">
-        <div class="item flex-item-1">Teste 1</div>
-        <div class="item flex-item-1">Teste 2</div>
-        <div class="item ">Teste 3</div>
-        <div class="item '">Teste 4</div>
+    <!-- Aula 5 -->
+    <section class="bg-white">
+        <h1>Aula 5</h1>
+        <h2>Justify-content</h2>
+        <p>Alinha os itens no eixo horizontal. Precisa ter espaço lateral para ter efeito. <br> Não vai funcionar se os itens estiverem com a propriedade flex: 1; </p>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: flex-start;</span> (no container)
+            </h3>
+                <p>(Por padrão os itens já ficam alinhados à esquerda no container)</p>
+            <article class="container flex justify-content-flex-start">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: flex-end;</span> (no container)
+            </h3>
+                <p>(Alinha os itens à direita no container)</p>
+            <article class="container flex justify-content-flex-end">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: center;</span> (no container)
+            </h3>
+                <p>(Alinha os itens no centro do container)</p>
+            <article class="container flex justify-content-center">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: space-between;</span> (no container)
+            </h3>
+                <p>(Adiciona espaço entre os itens, mantendo as extremidades sem espaçamento)</p>
+            <article class="container flex justify-content-space-between">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: space-around;</span> (no container)
+            </h3>
+                <p>(Adiciona o mesmo espaço em volta dos itens <br> Observe que na borda o espaço é menor que entre os itens, pois entre os itens é somado a borda dos itens) </p>
+            <article class="container flex justify-content-space-around">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>justify-content: space-evenly;</span> (no container)
+            </h3>
+                <p>(Adiciona o mesmo espaço em volta dos itens e nas bordas. <br> Observe que na borda o espaço é o mesmo que entre os itens) </p>
+            <article class="container flex justify-content-space-evenly">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <h2>justify-content em colunas</h2>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: flex-start;</span> (no container)
+            </h3>
+                <p>(Por padrão os itens já ficam alinhados à esquerda no container)</p>
+            <article class="container h-300 flex flex-column justify-content-flex-start">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: flex-end;</span> (no container)
+            </h3>
+                <p>(Alinha os itens à direita no container)</p>
+            <article class="container h-300 flex flex-column justify-content-flex-end">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: center;</span> (no container)
+            </h3>
+                <p>(Alinha os itens no centro do container)</p>
+            <article class="container h-300 flex flex-column justify-content-center">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: space-between;</span> (no container)
+            </h3>
+                <p>(Adiciona espaço entre os itens, mantendo as extremidades sem espaçamento)</p>
+            <article class="container h-300 flex flex-column justify-content-space-between">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: space-around;</span> (no container)
+            </h3>
+                <p>(Adiciona o mesmo espaço em volta dos itens <br> Observe que na borda o espaço é menor que entre os itens, pois entre os itens é somado a borda dos itens) </p>
+            <article class="container h-300 flex flex-column justify-content-space-around">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>justify-content: space-evenly;</span> (no container)
+            </h3>
+                <p>(Adiciona o mesmo espaço em volta dos itens e nas bordas. <br> Observe que na borda o espaço é o mesmo que entre os itens) </p>
+            <article class="container h-300 flex flex-column justify-content-space-evenly">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </article>
+        </div>
     </section>
 </body>
-</html>`
+</html>
