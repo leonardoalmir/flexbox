@@ -83,6 +83,13 @@ p {
     height: 300px;
 }
 
+.h-200 {
+    height: 200px;
+}
+.h-400 {
+    height: 400px;
+}
+
 /* Aula 1 */
 
 .flex {
@@ -182,3 +189,32 @@ p {
 }
 
 /* Aula 6 */
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.align-items-flex-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+#item-1 {
+    padding: 30px 40px 0 40px;
+}
+
+#center-item {
+    flex: 0;
+    padding: 20px;
+}

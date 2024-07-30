@@ -411,5 +411,159 @@
             </article>
         </div>
     </section>
+    <!-- Aula 6 -->
+     <section class="bg-gray">
+        <h1>Aula 6</h1>
+        <h2>align-items</h2>
+        <p>Alinha os itens no eixo vertical. Precisa ter espaço superior/inferior para ter efeito.</p>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>align-items: stretch;</span> (no container)
+            </h3>
+                <p>(Por padrão os itens já possuem este comportamento de acompanhar a altura do maior item ou do container)</p>
+            <article class="container flex align-items-stretch">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>align-items: flex-start;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados parte superior do container)</p>
+            <article class="container h-200 flex align-items-flex-start">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>align-items: flex-end;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados na parte inferior do container)</p>
+            <article class="container h-200 flex align-items-flex-end">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>align-items: center;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados no centro do container)</p>
+            <article class="container h-200 flex align-items-center">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>align-items: baseline;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados na parte superior, mas de acordo com a tipografia, desconsiderando paddings)</p>
+            <article class="container h-200 flex align-items-baseline">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <h2>align-items em colunas</h2>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>align-items: stretch;</span> (no container)
+            </h3>
+                <p>(Por padrão os itens já possuem este comportamento de acompanhar a altura do maior item ou do container)</p>
+            <article class="container flex align-items-stretch flex-column">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>align-items: flex-start;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados à esquerda do container quando em colunas)</p>
+            <article class="container flex align-items-flex-start flex-column">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>align-items: flex-end;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados à direita do container quando em colunas)</p>
+            <article class="container flex align-items-flex-end flex-column">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>align-items: center;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados no centro do container)</p>
+            <article class="container flex align-items-center flex-column">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex-direction: column;</span> (no container) <br>
+                <span>align-items: baseline;</span> (no container)
+            </h3>
+                <p>(Os itens ficam posicionados na parte superior, mas de acordo com a tipografia, desconsiderando paddings)</p>
+            <article class="container flex align-items-baseline flex-column">
+                <div class="item" id="item-1">1</div>
+                <div class="item">Testando e aumentando o item 2</div>
+                <div class="item">Teste também do item na caia faz com que os outros 3</div>
+                <div class="item">Teste aumentando tamanho da caixa 4</div>
+            </article>
+        </div>
+        <div>
+            <h3>
+                <span>display: flex;</span> (no container) <br>
+                <span>flex: 0;</span> (no item, para ele não crescer horizontalmente) <br>
+                <span>justify-content: center;</span> (no container) <br>
+                <span>align-items: center;</span> (no container)
+            </h3>
+                <p>(Centralizando um item ao meio do container. O flex: 0; foi usado <br> só para o item ficar mais quadrado)</p>
+            <article class="container h-400 flex align-items-center justify-content-center">
+                <div class="item" id="center-item">Centralizando está caia dentro do container</div>
+            </article>
+        </div>
+     </section>
 </body>
 </html>
