@@ -1,0 +1,92 @@
+.shrink-1 {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.shrink-3 {
+	flex-grow: 1;
+	flex-shrink: 3;
+}
+
+.shrink-1-basis {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 150px;
+}
+
+.shrink-0-basis {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 150px;
+}
+
+.shrink-3-basis {
+	flex-grow: 1;
+	flex-shrink: 3;
+	flex-basis: 150px;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+
+.item {
+	margin: 5px;
+	background-color: #1795fc81;
+    border: 1px solid #2c99f94d;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 2px solid #2c77f94d;
+    background-color: #2c7bf926;
+}
+/* Flex Item */
+
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}
+
+
+/*---------------------*/
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+    background-color: #212529;
+	color: #DEE2E6;
+}
+
+main div {
+    max-width: 500px;
+	margin: 0 auto;
+}
+
+main h1 {
+	font-size: 3rem;
+}
+
+main div p {
+	font: 1.5rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
